@@ -3,7 +3,7 @@ version: '3'
 services:  
   coffee:
     image: lalyos/12factor:edge
-    # pull_policy: always
+    pull_policy: always
     environment:
       - TITLE=Kávészünet at Leadventures [${ENV:-Dev}]
       - COLOR=${COLOR:-lightgreen}
