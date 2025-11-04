@@ -6,7 +6,7 @@ services:
     pull_policy: always
     environment:
       - TITLE=Coffebreak at Leadventures [${ENV:-Dev}]
-      - COLOR=lightgreen
+      - COLOR=${COLOR:-lightgreen}
     ports:
       - 8888:80
     labels:
