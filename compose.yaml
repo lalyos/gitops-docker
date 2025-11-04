@@ -5,7 +5,7 @@ services:
     image: lalyos/12factor:git-9f5b86a
     # pull_policy: always
     environment:
-      - TITLE=Good morning at Leadventures [${ENV:-Dev}]
+      - TITLE=Kávészünet at Leadventures [${ENV:-Dev}]
       - COLOR=${COLOR:-lightgreen}
     ports:
       - 8888:80
