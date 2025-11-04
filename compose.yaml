@@ -1,0 +1,18 @@
+version: '3'
+
+services:  
+  coffee:
+    image: lalyos/12factor:edge
+    pull_policy: always
+    environment:
+      - TITLE=Coffebreak at Leadventures
+      - COLOR=lightgreen
+    ports:
+      - 8888:80
+    labels:
+      - "traefik.frontend.rule=Host:coffee.${DOMAIN:-lvh.me}"
+    
+networks:
+  default:
+    external:
+      name: traefik
