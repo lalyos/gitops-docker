@@ -2,7 +2,7 @@ version: '3'
 
 services:  
   coffee:
-    image: lalyos/12factor:git-9f5b86a
+    image: lalyos/12factor:edge
     # pull_policy: always
     environment:
       - TITLE=Kávészünet at Leadventures [${ENV:-Dev}]
