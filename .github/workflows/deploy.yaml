@@ -2,7 +2,8 @@ name: SSH Deploy to Hetzner
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - '*'
   workflow_dispatch:  # Manual trigger option
 
 jobs:
