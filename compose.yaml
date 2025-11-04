@@ -5,7 +5,7 @@ services:
     image: lalyos/12factor:edge
     pull_policy: always
     environment:
-      - TITLE=Coffebreak at Leadventures
+      - TITLE=Coffebreak at Leadventures [${ENV:-Dev}]
       - COLOR=lightgreen
     ports:
       - 8888:80
